@@ -1,0 +1,34 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="100%" height="100%">
+  <defs>
+    <linearGradient id="pdtGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#00F2FE" />
+      <stop offset="50%" stop-color="#4FACFE" />
+      <stop offset="100%" stop-color="#0052D4" />
+    </linearGradient>
+    <linearGradient id="accentGrad" x1="0%" y1="100%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#FF6B35" />
+      <stop offset="100%" stop-color="#FFA07A" />
+    </linearGradient>
+    <filter id="glow" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="10" result="blur" />
+      <feComposite in="SourceGraphic" in2="blur" operator="over" />
+    </filter>
+  </defs>
+  
+  <!-- Background Circle -->
+  <rect width="512" height="512" rx="128" fill="#0B132B" />
+  
+  <!-- Outer Radio Waves / Fiber Rings -->
+  <circle cx="256" cy="256" r="190" fill="none" stroke="#4FACFE" stroke-width="4" stroke-opacity="0.2" stroke-dasharray="12 8" />
+  <circle cx="256" cy="256" r="145" fill="none" stroke="#00F2FE" stroke-width="6" stroke-opacity="0.4" />
+  
+  <!-- Glowing Center Fiber Core -->
+  <circle cx="256" cy="256" r="95" fill="url(#pdtGrad)" filter="url(#glow)" />
+  
+  <!-- Dynamic Lightning / Speed Slash -->
+  <path d="M240 160 L290 230 L250 250 L300 340 L230 275 L265 255 Z" fill="#FFFFFF" />
+  
+  <!-- Orbit Node Indicator -->
+  <circle cx="360" cy="180" r="14" fill="url(#accentGrad)" filter="url(#glow)" />
+  <circle cx="160" cy="330" r="10" fill="#00F2FE" />
+</svg>

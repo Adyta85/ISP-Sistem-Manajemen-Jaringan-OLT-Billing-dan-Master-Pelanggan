@@ -1,0 +1,31 @@
+{
+  "short_name": "PDT-Pedee",
+  "name": "PDT-Pedee - PT Prasetia Dwidharma Teknologi",
+  "description": "Portal Layanan Mandiri Pelanggan Internet Service Provider PDT-Pedee PT Prasetia Dwidharma Teknologi",
+  "icons": [
+    {
+      "src": "/pdt-logo.png",
+      "type": "image/png",
+      "sizes": "1024x1024",
+      "purpose": "any maskable"
+    },
+    {
+      "src": "/icon-192.png",
+      "type": "image/png",
+      "sizes": "192x192",
+      "purpose": "any maskable"
+    },
+    {
+      "src": "/icon-512.png",
+      "type": "image/png",
+      "sizes": "512x512",
+      "purpose": "any maskable"
+    }
+  ],
+  "start_url": "/",
+  "background_color": "#0B132B",
+  "theme_color": "#0284C7",
+  "display": "standalone",
+  "orientation": "portrait-primary",
+  "scope": "/"
+}
